@@ -1,4 +1,5 @@
 #!python3 
+import json
 """
 Tell the user that they will be entering in a list of integers.
 Keep reading integers until they enter a blank line (press Enter)
@@ -29,3 +30,15 @@ task2.txt contents:
 
 (3 points)
 """
+
+filename = 'task2.txt'
+file = open(filename,'w')
+inputData = None
+while inputData != "":
+    x=True
+    inputData = input("Enter a number")
+    if inputData == str:
+        
+        x=False
+    if x==True:
+        file.write(inputData + "\n")
