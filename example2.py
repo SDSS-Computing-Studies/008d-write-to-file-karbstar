@@ -3,7 +3,8 @@ import json
 
 x = 10
 y = 3
-z = ['Hello','world']
+z = [['Hello','world'], ["Hello","kity"], ["dog","food"]]
+print(z[0])
 outputData = json.dumps(z)
 
 print(type(z))
@@ -20,3 +21,18 @@ print(type(newList))
 print(type(jsonList))
 print(jsonList)
 print(jsonList[0])
+
+
+data = [
+    {
+        "name" : "Joe",
+        "type" : "Pikachu"
+    },
+    {
+        "name" : "Bob",
+        "type" : "Squirtle"
+    }
+
+]
+x = json.dumps(data)
+print(x)
