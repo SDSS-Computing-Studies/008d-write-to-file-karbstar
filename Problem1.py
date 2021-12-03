@@ -1,6 +1,6 @@
 #!python3
 import json
-filename = 'task2.txt'
+filename = 'Problem1.txt'
 file = open(filename,'r')
 data=file.read()
 def rf():
@@ -14,8 +14,9 @@ def rf():
         d=False
 rf()
 if d==True:
+    dr=json.loads(data)
     try: 
-        dr=json.load(data)
+        dr=json.loads(data)
         t=True
     except:
         print(2)
