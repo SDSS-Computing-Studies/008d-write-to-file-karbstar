@@ -23,7 +23,7 @@ x=input("enter what you want to do\na->edit at subjects\nb->edit your grades\n=>
 if x=='a':
     f=int(input("enter the corse name you want to change from 0-7=>"))
     print(f)
-    print(', '.join(dr))
+    print(dr[f])
     d=input("what wold you like to replace it with->")
     dr[f]=d
     
