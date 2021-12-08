@@ -37,9 +37,9 @@ elif x=='b':
     print(f)
     print(', '.join(dr2))
     d=input("what wold you like to replace it with->")
-    dr[f]=d
+    dr2[f]=d
     filename4 = 'grades.txt'
-    file4 = open(filename,'w')
+    file4 = open(filename4,'w')
     outputData2 = json.dumps(dr2)
     file4.write(f"{outputData2}")
     print(', '.join(dr2))
